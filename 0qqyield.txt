@@ -11732,16 +11732,14 @@ addcmd('hitbox',{},function(args, speaker)
 			local Size = Vector3.new(sizeArg,sizeArg,sizeArg)
 			local Root = Players[v].Character:FindFirstChild('HumanoidRootPart')
 			if Root:IsA("BasePart") then
-				if not args[2] or sizeArg == 1 then
-					Root.Size = Vector3.new(2,1,1)
-					Root.Transparency = 0.4
-				else
-					Root.Size = Size
-					Root.Transparency = 0.4
-				end
-			end
-		end
-	end
+Root.Transparency = 0.7
+Root.BrickColor = BrickColor.new("Bright red")
+Root.Material = "Neon"
+Root.CanCollide = false
+Root.Size = Size
+end
+end
+end
 end)
 
 addcmd('stareat',{'stare'},function(args, speaker)
