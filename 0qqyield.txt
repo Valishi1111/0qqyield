@@ -11732,7 +11732,7 @@ addcmd('hitbox',{},function(args, speaker)
 			local Size = Vector3.new(sizeArg,sizeArg,sizeArg)
 			local Root = Players[v].Character:FindFirstChild('HumanoidRootPart')
 			if Root:IsA("BasePart") then
-Root.Transparency = 0.8
+Root.Transparency = 0.7
 Root.BrickColor = BrickColor.new("Bright red")
 Root.Material = "Neon"
 Root.CanCollide = false
