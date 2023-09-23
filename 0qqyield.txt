@@ -7632,7 +7632,7 @@ addcmd('esp',{},function(args, speaker)
 	if not CHMSenabled then
 		ESPenabled = true
 		for i,v in pairs(Players:GetChildren()) do
-			if v.ClassName == "Player" and v.Name ~= speaker.Name then
+			if v.ClassName == "Player" and v.Name == speaker.Name then
 				ESP(v)
 			end
 		end
